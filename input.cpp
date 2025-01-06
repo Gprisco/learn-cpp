@@ -1,4 +1,5 @@
 #include <iostream>
+#include <limits>
 
 using namespace std;
 
@@ -10,7 +11,8 @@ int main() {
 
     if (!(cin >> number)) {
       cout << "You entered an invalid number." << endl;
-      break;
+      cin.clear();
+      cin.ignore(numeric_limits<streamsize>::max(), '\n');
     }
 
     if (number != 0) {
