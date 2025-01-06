@@ -1,8 +1,11 @@
+CPP = g++
+COMPILE_OUTPUT = a.out
+
 input:
-	g++ input.cpp -o a.out
+	$(CPP) input.cpp -o $(COMPILE_OUTPUT)
 
 run:
-	./a.out
+	./$(COMPILE_OUTPUT)
 
 clean:
-	rm -f a.out
+	rm -f $(COMPILE_OUTPUT)
