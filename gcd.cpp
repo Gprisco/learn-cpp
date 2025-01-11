@@ -30,14 +30,24 @@ int gcd(int low, int high) {
   return res;
 }
 
+int get_number_from_stdin_and_validate(string msg) {
+  int a = -1;
+  while (a <= 0) {
+    cout << msg;
+    get_from_stdin_or(&a, -1);
+
+    if (a <= 0) {
+      cout << "The number must be >= 0" << endl;
+    }
+  }
+
+  return a;
+}
+
 int main() {
-  int a, b;
-
-  cout << "Enter a number" << endl;
-  get_from_stdin_or(&a, -1);
-
-  cout << "Enter another number" << endl;
-  get_from_stdin_or(&b, -1);
+  int a = get_number_from_stdin_and_validate("Enter number a: ");
+  cout << endl;
+  int b = get_number_from_stdin_and_validate("Enter number b: ");
 
   cout << gcd(a, b) << endl;
 
