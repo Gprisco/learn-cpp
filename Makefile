@@ -7,6 +7,9 @@ input:
 guessing_game:
 	$(CPP) guessing_game.cpp -o $(COMPILE_OUTPUT)
 
+gcd:
+	$(CPP) gcd.cpp -o $(COMPILE_OUTPUT)
+
 run:
 	./$(COMPILE_OUTPUT)
 
