@@ -4,6 +4,9 @@ COMPILE_OUTPUT = a.out
 input:
 	$(CPP) input.cpp -o $(COMPILE_OUTPUT)
 
+guessing_game:
+	$(CPP) guessing_game.cpp -o $(COMPILE_OUTPUT)
+
 run:
 	./$(COMPILE_OUTPUT)
 
