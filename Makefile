@@ -10,6 +10,9 @@ guessing_game:
 gcd:
 	$(CPP) gcd.cpp -o $(COMPILE_OUTPUT)
 
+files:
+	$(CPP) files.cpp user_input.cpp -o $(COMPILE_OUTPUT)
+
 run:
 	./$(COMPILE_OUTPUT)
 

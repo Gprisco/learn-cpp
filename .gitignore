@@ -3,3 +3,4 @@
 
 # Output files
 *.out
+*.o
